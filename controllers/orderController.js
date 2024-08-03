@@ -23,7 +23,6 @@ const newOrder = async (req, res) => {
             totalPrice,
             orderStatus,//added orderstatus
         });
-        console.log(order['paidAt'])
         return res.send(order);
 
     } catch (err) {
