@@ -37,6 +37,7 @@ const {
 const {
   newOrder,
   getOrderedProductsBySeller,
+  getOrderedProductsByCustomer, 
 } = require("../controllers/orderController.js");
 
 // Seller
@@ -71,7 +72,7 @@ router.put("/CustomerUpdate/:id", cartUpdate);
 
 // Order
 router.post("/newOrder", newOrder);
-router.get("/getOrderedProductsByCustomer/:id", getOrderedProductsBySeller);
+router.get("/getOrderedProductsByCustomer/:id", getOrderedProductsByCustomer); // change getorderedProductsBySeller name to getOrderedProductsByCustomer 
 router.get("/getOrderedProductsBySeller/:id", getOrderedProductsBySeller);
 
 // there was no export of router
